@@ -62,14 +62,7 @@ americanLeagueRuns = 11443
 games = 162
 print(baseRuns(astrosBatting,americanLeagueRuns,games))
 #######################################################################
-#Cincinnati Reds Test Data
-#Reds data stats in index 0, National League stats in index 1
-redsPitching = ((1390,20985),(565,8044),(72,879),(41,609),(219,2935),(249,4203),
-            (38,461),(120,1255),(39,476),(116,1846),(6213,92673),(42,554),
-            (50,653))
-nationalLeagueRuns = 11139
-games = 162
-print(baseRuns(redsPitching,nationalLeagueRuns,games))
+
     
 
     
