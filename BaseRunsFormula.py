@@ -37,6 +37,7 @@ def rawBaseRuns(H,BB,HBP,IBB,HR,DBL,TPL,SB,CS,GDP,PA,SF,SH):
     B = 1.1*(1.4*TB-0.6*H-3*HR+0.1*(BB+HBP-IBB)+0.9*(SB-CS-GDP))
     C = (PA-BB-SF-SH-HBP-H+CS+GDP)
     D = HR
+    #raw baseruns formula
     rawBaseRuns = ((A*B)/(B+C)) + D
     return round(rawBaseRuns,2)
     
@@ -45,6 +46,7 @@ def baseRuns(values,lgRuns,G):
     teamValues = [i[0] for i in values]
     # league values as inputs
     lgValues = [i[1] for i in values]
+    #uses raw baseruns function to calcualte team raw baseruns
     teamRawBaseRuns = rawBaseRuns(*teamValues)
     lgRawBaseRuns = rawBaseRuns(*lgValues)
     # BaseRuns league adjustment
