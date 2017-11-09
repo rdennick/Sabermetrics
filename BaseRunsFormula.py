@@ -7,6 +7,8 @@ Created on Fri Sep 15 12:33:17 2017
 
 This code calculates the BaseRuns formula to get a better sense of a teams
 'true talent'
+As of October 5th 2017, National League Runs = 11,139
+                        American League Runs = 11,443
 """
 
 #Inuputs:
@@ -49,15 +51,25 @@ def baseRuns(values,lgRuns,G):
     baseRunsLA = (lgRuns)/(lgRawBaseRuns)
     baseRuns = round(teamRawBaseRuns*baseRunsLA,2)
     return round(baseRuns/G,2)
+#######################################################################
 
-# Milwaukee Brewers stats in index 0, National League stats in index 1
-batting = ((1446,20978),(450,7723),(52,881),(29,590),
-          (206,2657),(221,4101),(17,502),(110,1388),
-          (38,553),(97,1804),(5683,92539),(21,607),(24,675))
-# Milwaukee Brewers stats in index 0, National League stats in index 1
-pitching = ((1440,20978),(432,7723),(61,881),(38,590),(164,2657),(216,4101),
-            (16,502),(91,1388),(26,553),(109,1804),(5701,92539),(25,607),
-            (24,675))
+#Houston Astros Test Data
+#Astros data  stats in index 0, American League data starts in index 1
+astrosBatting = ((1581,21229),(509,7785),(70,884),(27,361),
+          (238,3170),(346,4194),(20,334),(98,1272),
+          (42,458),(139,1958),(6271,92622),(61,614),(11,272))
+americanLeagueRuns = 11443
+games = 162
+print(baseRuns(astrosBatting,americanLeagueRuns,games)
+#######################################################################
+#Cincinnati Reds Test Data
+#Reds data stats in index 0, National League stats in index 1
+redsPitching = ((1390,20985),(565,8044),(72,879),(41,609),(219,2935),(249,4203),
+            (38,461),(120,1255),(39,476),(116,1846),(6213,92673),(42,554),
+            (50,653))
+nationalLeagueRuns = 11139
+games = 162
+print(baseRuns(redsPitching,nationalLeagueRuns,games)
     
 
     
