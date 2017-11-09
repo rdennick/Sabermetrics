@@ -60,7 +60,7 @@ astrosBatting = ((1581,21229),(509,7785),(70,884),(27,361),
           (42,458),(139,1958),(6271,92622),(61,614),(11,272))
 americanLeagueRuns = 11443
 games = 162
-print(baseRuns(astrosBatting,americanLeagueRuns,games)
+print(baseRuns(astrosBatting,americanLeagueRuns,games))
 #######################################################################
 #Cincinnati Reds Test Data
 #Reds data stats in index 0, National League stats in index 1
@@ -69,7 +69,7 @@ redsPitching = ((1390,20985),(565,8044),(72,879),(41,609),(219,2935),(249,4203),
             (50,653))
 nationalLeagueRuns = 11139
 games = 162
-print(baseRuns(redsPitching,nationalLeagueRuns,games)
+print(baseRuns(redsPitching,nationalLeagueRuns,games))
     
 
     
